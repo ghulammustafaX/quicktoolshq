@@ -371,25 +371,25 @@ export default function Home() {
               <div className="flex items-center space-x-4 text-white/90">
                 <div className="flex -space-x-2">
                   <div className="w-10 h-10 relative">
-                    <Image 
-                      src="https://randomuser.me/api/portraits/men/32.jpg" 
-                      alt="User" 
+                     <Image
+                      src="/assets/user-1.jpg"
+                      alt="User-1"
                       fill
                       className="rounded-full border-2 border-white/30 object-cover"
                     />
                   </div>
                   <div className="w-10 h-10 relative">
-                    <Image 
-                      src="https://randomuser.me/api/portraits/women/44.jpg" 
-                      alt="User" 
+                    <Image
+                      src="/assets/user-2.jpg"
+                      alt="User-2"
                       fill
                       className="rounded-full border-2 border-white/30 object-cover"
                     />
                   </div>
                   <div className="w-10 h-10 relative">
-                    <Image 
-                      src="https://randomuser.me/api/portraits/men/65.jpg" 
-                      alt="User" 
+                    <Image
+                      src="/assets/user-3.jpg"
+                      alt="User-3"
                       fill
                       className="rounded-full border-2 border-white/30 object-cover"
                     />
