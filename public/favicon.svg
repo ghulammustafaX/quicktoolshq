@@ -1,0 +1,25 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="16" fill="url(#gradient1)"/>
+  
+  <!-- Tool Icon -->
+  <g transform="translate(8, 8)">
+    <!-- Lightning Bolt for Speed -->
+    <path d="M10 1L4 8H8L6 15L12 8H8L10 1Z" fill="white" opacity="0.9"/>
+    
+    <!-- Small Tool Icons -->
+    <circle cx="12" cy="4" r="2" fill="white" opacity="0.8"/>
+    <circle cx="12" cy="4" r="1" fill="url(#gradient1)" opacity="0.9"/>
+    
+    <circle cx="4" cy="12" r="2" fill="white" opacity="0.8"/>
+    <circle cx="4" cy="12" r="1" fill="url(#gradient1)" opacity="0.9"/>
+  </g>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B5AD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#008B82;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

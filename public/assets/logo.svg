@@ -1,0 +1,30 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="24" cy="24" r="24" fill="url(#gradient1)"/>
+  
+  <!-- Tool Icons Group -->
+  <g transform="translate(12, 12)">
+    <!-- Lightning Bolt for Speed -->
+    <path d="M14 2L8 12H12L10 22L16 12H12L14 2Z" fill="white" opacity="0.9"/>
+    
+    <!-- Gear Icon -->
+    <circle cx="18" cy="6" r="3" fill="white" opacity="0.8"/>
+    <circle cx="18" cy="6" r="1.5" fill="url(#gradient1)" opacity="0.9"/>
+    
+    <!-- Tool Icon -->
+    <circle cx="6" cy="18" r="3" fill="white" opacity="0.8"/>
+    <circle cx="6" cy="18" r="1.5" fill="url(#gradient1)" opacity="0.9"/>
+    
+    <!-- Small accent dots -->
+    <circle cx="20" cy="20" r="1.5" fill="white" opacity="0.7"/>
+    <circle cx="4" cy="4" r="1.5" fill="white" opacity="0.7"/>
+  </g>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B5AD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#008B82;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

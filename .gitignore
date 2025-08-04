@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# brand colors
+Primary: #00B5AD (main teal)
+Secondary: #008B82 (darker teal)
+Accent: #009B94 (mid teal for hover states)
+Dark accent: #00746A (darkest teal for hover states) 
