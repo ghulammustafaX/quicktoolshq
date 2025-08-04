@@ -14,9 +14,6 @@ export default function Footer() {
               Your HQ for fast online tools. Access calculators, converters, 
               text utilities, and file processing tools all in one place.
             </p>
-           <p className="text-xs text-green-400 mb-2">
-             <span className="font-semibold">Privacy-first:</span> All tools process your data locally in your browser. No files or text ever leave your device.
-           </p>
             <p className="text-sm text-gray-400 hidden md:block">
               © {currentYear} QuickToolsHQ. All rights reserved.
             </p>
@@ -48,21 +45,6 @@ export default function Footer() {
                   <li>
                     <Link href="/tools/pdf-converter" className="hover:text-[#00B5AD] transition-colors duration-200">
                       PDF Converter
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/password-generator" className="hover:text-[#00B5AD] transition-colors duration-200">
-                      Password Generator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/image-compressor" className="hover:text-[#00B5AD] transition-colors duration-200">
-                      Image Compressor
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/text-case-converter" className="hover:text-[#00B5AD] transition-colors duration-200">
-                      Text Case Converter
                     </Link>
                   </li>
                 </ul>
@@ -120,21 +102,6 @@ export default function Footer() {
                   <li>
                     <Link href="/tools/pdf-converter" className="hover:text-[#00B5AD] transition-colors duration-200">
                       PDF Converter
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/password-generator" className="hover:text-[#00B5AD] transition-colors duration-200">
-                      Password Generator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/image-compressor" className="hover:text-[#00B5AD] transition-colors duration-200">
-                      Image Compressor
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/tools/text-case-converter" className="hover:text-[#00B5AD] transition-colors duration-200">
-                      Text Case Converter
                     </Link>
                   </li>
                 </ul>
