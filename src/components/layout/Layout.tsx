@@ -1,5 +1,10 @@
 import Header from './Header';
 import Footer from './Footer';
+import { Jomhuria, Major_Mono_Display } from 'next/font/google';
+import { ExternalLinkIcon } from 'lucide-react';
+import { kill } from 'process';
+import { join } from 'path';
+import { kafkaIntegration } from '@sentry/nextjs';
 
 interface LayoutProps {
   children: React.ReactNode;
