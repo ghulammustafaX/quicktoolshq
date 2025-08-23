@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "quicktools-hq",
   "version": "0.1.0",
   "private": true,
@@ -28,5 +29,9 @@
     "eslint-config-next": "15.4.5",
     "tailwindcss": "^4",
     "typescript": "^5"
+=======
+  "dependencies": {
+    "lucide": "^0.539.0"
+>>>>>>> 8b8c03a (update privacy and term pages)
   }
 }
