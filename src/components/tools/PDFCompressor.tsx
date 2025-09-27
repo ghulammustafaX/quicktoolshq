@@ -169,7 +169,7 @@ export default function PDFCompressor() {
   };
 
   const downloadFile = (result: CompressionResult) => {
-    // Create a proper ArrayBuffer from Uint8Array
+    // Create a proper ArrayBuffer from Uint8Array for Blob compatibility
     const buffer = new ArrayBuffer(result.compressedData.length);
     const view = new Uint8Array(buffer);
     view.set(result.compressedData);
