@@ -169,7 +169,7 @@ export default function PDFCompressor() {
   };
 
   const downloadFile = (result: CompressionResult) => {
-    const blob = new Blob([result.compressedData], { type: 'application/pdf' });
+    const blob = new Blob([result.compressedData.buffer], { type: 'application/pdf' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
