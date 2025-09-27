@@ -1,171 +1,204 @@
 import { MetadataRoute } from 'next'
- 
+
+/**
+ * QuickToolsHQ - Complete Sitemap Generator
+ * Generated: September 27, 2025
+ * Total Pages: 25+ (Homepage + Tools + Blog Posts + Legal Pages)
+ * 
+ * This sitemap includes all pages for optimal SEO and search engine discovery:
+ * - Main navigation pages (5)
+ * - All productivity tools (10) 
+ * - All blog articles (10)
+ * - Legal/policy pages (2)
+ */
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    // Homepage
+  const currentDate = new Date();
+  
+  // Base domain
+  const baseUrl = 'https://quicktoolshq.com';
+  
+  // ============================================================================
+  // 📍 MAIN NAVIGATION PAGES (Priority: 1.0 - 0.6)
+  // ============================================================================
+  const mainPages = [
     {
-      url: 'https://quicktoolshq.com',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
+      url: baseUrl,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+      description: '🏠 Homepage - Main landing page'
     },
-    
-    // Main sections
     {
-      url: 'https://quicktoolshq.com/tools',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${baseUrl}/tools`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
       priority: 0.9,
+      description: '🛠️ Tools Index - All productivity tools'
     },
     {
-      url: 'https://quicktoolshq.com/blog',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
+      description: '📝 Blog Index - All articles and guides'
     },
     {
-      url: 'https://quicktoolshq.com/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
       priority: 0.6,
+      description: '👋 About Page - Company information'
     },
+  ];
 
-    // Legal pages
+  // ============================================================================
+  // ⚖️ LEGAL & POLICY PAGES (Priority: 0.4)
+  // ============================================================================
+  const legalPages = [
     {
-      url: 'https://quicktoolshq.com/privacy-policy',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly' as const,
       priority: 0.4,
+      description: '🔒 Privacy Policy - Data protection info'
     },
     {
-      url: 'https://quicktoolshq.com/terms-of-service',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      url: `${baseUrl}/terms-of-service`,
+      lastModified: currentDate,
+      changeFrequency: 'yearly' as const,
       priority: 0.4,
+      description: '📄 Terms of Service - Usage terms'
     },
+  ];
 
-    // Tools - High priority for conversion
+  // ============================================================================
+  // 🛠️ PRODUCTIVITY TOOLS (Priority: 0.8) - High conversion value
+  // ============================================================================
+  const toolPages = [
     {
-      url: 'https://quicktoolshq.com/tools/bmi-calculator',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/bmi-calculator`,
+      description: '⚖️ BMI Calculator - Body Mass Index tool'
     },
     {
-      url: 'https://quicktoolshq.com/tools/word-counter',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/word-counter`,
+      description: '📊 Word Counter - Text analysis tool'
     },
     {
-      url: 'https://quicktoolshq.com/tools/unit-converter',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/unit-converter`,
+      description: '🔄 Unit Converter - Measurement conversions'
     },
     {
-      url: 'https://quicktoolshq.com/tools/text-case-converter',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/text-case-converter`,
+      description: '🔤 Text Case Converter - Text formatting'
     },
     {
-      url: 'https://quicktoolshq.com/tools/password-generator',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/password-generator`,
+      description: '🔐 Password Generator - Secure passwords'
     },
     {
-      url: 'https://quicktoolshq.com/tools/image-compressor',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/image-compressor`,
+      description: '🖼️ Image Compressor - Optimize images'
     },
     {
-      url: 'https://quicktoolshq.com/tools/image-converter',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/image-converter`,
+      description: '🎨 Image Converter - Format conversion'
     },
     {
-      url: 'https://quicktoolshq.com/tools/pdf-compress',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/pdf-compress`,
+      description: '📄 PDF Compress - Reduce PDF size'
     },
     {
-      url: 'https://quicktoolshq.com/tools/pdf-compressor',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/pdf-compressor`,
+      description: '📁 PDF Compressor - Advanced compression'
     },
     {
-      url: 'https://quicktoolshq.com/tools/pdf-converter',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}/tools/pdf-converter`,
+      description: '🔄 PDF Converter - Format conversion'
     },
+  ].map(tool => ({
+    url: tool.url,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+    description: tool.description
+  }));
 
-    // Blog posts - Good for SEO and content marketing
+  // ============================================================================
+  // 📝 BLOG ARTICLES (Priority: 0.7) - Content marketing & SEO
+  // ============================================================================
+  const blogPosts = [
     {
-      url: 'https://quicktoolshq.com/blog/best-ai-writing-tools-content-generators-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/best-ai-writing-tools-content-generators-2025`,
+      description: '🤖 AI Writing Tools Guide - Best content generators'
     },
     {
-      url: 'https://quicktoolshq.com/blog/best-free-online-image-compression-tools-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/best-free-online-image-compression-tools-2025`,
+      description: '🖼️ Image Compression Guide - Free online tools'
     },
     {
-      url: 'https://quicktoolshq.com/blog/best-online-collaboration-tools-remote-teams-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/best-online-collaboration-tools-remote-teams-2025`,
+      description: '👥 Collaboration Tools - Remote team solutions'
     },
     {
-      url: 'https://quicktoolshq.com/blog/essential-online-tools-professionals-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/essential-online-tools-professionals-2025`,
+      description: '💼 Professional Tools - Essential online resources'
     },
     {
-      url: 'https://quicktoolshq.com/blog/how-to-merge-pdf-files-online-free-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/how-to-merge-pdf-files-online-free-2025`,
+      description: '📋 PDF Merge Guide - Free online methods'
     },
     {
-      url: 'https://quicktoolshq.com/blog/optimize-images-web-quality',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/optimize-images-web-quality`,
+      description: '⚡ Image Optimization - Web performance tips'
     },
     {
-      url: 'https://quicktoolshq.com/blog/pdf-tools-guide',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/pdf-tools-guide`,
+      description: '📄 PDF Tools Guide - Complete overview'
     },
     {
-      url: 'https://quicktoolshq.com/blog/privacy-digital-age-data-safety',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/privacy-digital-age-data-safety`,
+      description: '🔒 Digital Privacy - Data safety in 2025'
     },
     {
-      url: 'https://quicktoolshq.com/blog/text-processing-automation-tools-save-time-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/text-processing-automation-tools-save-time-2025`,
+      description: '⚡ Text Automation - Time-saving tools'
     },
     {
-      url: 'https://quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/blog/ultimate-pdf-conversion-guide-2025`,
+      description: '🔄 PDF Conversion Guide - Complete tutorial'
     },
-  ]
+  ].map(post => ({
+    url: post.url,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+    description: post.description
+  }));
+
+  // ============================================================================
+  // 📊 SITEMAP SUMMARY & RETURN
+  // ============================================================================
+  const allPages = [
+    ...mainPages,
+    ...legalPages,
+    ...toolPages,
+    ...blogPosts,
+  ];
+
+  // Log sitemap stats for development
+  if (process.env.NODE_ENV === 'development') {
+    console.log(`📊 QuickToolsHQ Sitemap Generated:
+    🏠 Main Pages: ${mainPages.length}
+    ⚖️ Legal Pages: ${legalPages.length}
+    🛠️ Tool Pages: ${toolPages.length}
+    📝 Blog Posts: ${blogPosts.length}
+    📄 Total Pages: ${allPages.length}
+    🌐 Base URL: ${baseUrl}
+    📅 Generated: ${currentDate.toISOString()}
+    `);
+  }
+
+  // Return clean sitemap without description field (not part of MetadataRoute.Sitemap)
+  return allPages.map(({ description, ...page }) => page);
 }
