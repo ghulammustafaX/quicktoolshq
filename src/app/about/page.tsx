@@ -208,3 +208,4 @@ export const metadata = {
   description: 'Learn about QuickToolsHQ\'s mission to provide free, secure, and professional online tools. Discover our commitment to privacy, performance, and accessibility.',
   keywords: 'about quicktools, online tools platform, free web tools, privacy-focused tools, professional utilities, productivity tools',
 };
+

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Amethysta, Inter, Kdam_Thmor_Pro, Noto_Sans_Wancho, Stick } from "next/font/google";
 import "./globals.css";
+import { PageEmbeddingMismatchedContextError } from "pdf-lib";
+import { text } from "stream/consumers";
+import { BookHeart } from "lucide-react";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   title: {
     default: "QuickToolsHQ - Your HQ for Fast Online Tools",
     template: "%s | QuickToolsHQ"
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'google-site-verification-code-here', // Add your Google Search Console verification code
+    google: 'google-site-verification-code-here', // Google Search Console verification code
   }
 };
 

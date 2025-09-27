@@ -65,12 +65,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/privacy" className="hover:text-[#00B5AD] transition-colors duration-200">
+                    <Link href="/privacy-policy" className="hover:text-[#00B5AD] transition-colors duration-200">
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/terms" className="hover:text-[#00B5AD] transition-colors duration-200">
+                    <Link href="/terms-of-service" className="hover:text-[#00B5AD] transition-colors duration-200">
                       Terms of Service
                     </Link>
                   </li>
@@ -78,9 +78,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Desktop/Tablet: Side by side layout for screens >= 380px */}
             <div className="hidden min-[380px]:flex gap-8">
-              {/* Tools Section */}
               <div className="flex-1">
                 <h4 className="text-lg font-semibold mb-4">Tools</h4>
                 <ul className="space-y-2 text-gray-300">
@@ -122,12 +120,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/privacy" className="hover:text-[#00B5AD] transition-colors duration-200">
+                    <Link href="/privacy-policy" className="hover:text-[#00B5AD] transition-colors duration-200">
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/terms" className="hover:text-[#00B5AD] transition-colors duration-200">
+                    <Link href="/terms-of-service" className="hover:text-[#00B5AD] transition-colors duration-200">
                       Terms of Service
                     </Link>
                   </li>
