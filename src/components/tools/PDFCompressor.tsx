@@ -169,7 +169,7 @@ export default function PDFCompressor() {
   };
 
   const downloadFile = (result: CompressionResult) => {
-    const blob = new Blob([result.compressedData.buffer], { type: 'application/pdf' });
+    const blob = new Blob([new Uint8Array(result.compressedData)], { type: 'application/pdf' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -187,7 +187,7 @@ export default function PDFCompressor() {
     }
 
     // For multiple files, download each one individually
-    compressionResults.forEach((result, index) => {
+    compressionResults.forEach((result: CompressionResult, index: number) => {
       setTimeout(() => {
         downloadFile(result);
       }, index * 100); // Small delay between downloads
@@ -195,7 +195,7 @@ export default function PDFCompressor() {
   };
 
   const removeFile = (index: number) => {
-    const newFiles = selectedFiles.filter((_, i) => i !== index);
+    const newFiles = selectedFiles.filter((_: File, i: number) => i !== index);
     setSelectedFiles(newFiles);
     
     if (newFiles.length === 0) {
@@ -273,7 +273,7 @@ export default function PDFCompressor() {
             
             {/* Selected Files List */}
             <div className="space-y-3 mb-4">
-              {selectedFiles.map((file, index) => (
+              {selectedFiles.map((file: File, index: number) => (
                 <div key={index} className="flex items-center justify-between bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
@@ -380,7 +380,7 @@ export default function PDFCompressor() {
                 value={options.imageQuality}
                 onChange={(e) => {
                   const value = parseInt(e.target.value);
-                  setOptions(prev => ({
+                  setOptions((prev: CompressionOptions) => ({
                     ...prev,
                     imageQuality: value,
                     quality: value <= 30 ? 'low' : value <= 70 ? 'medium' : 'high'
@@ -466,7 +466,7 @@ export default function PDFCompressor() {
           {/* Individual File Results */}
           <div className="space-y-4 mb-6">
             <h4 className="font-semibold text-gray-900">Individual File Results:</h4>
-            {compressionResults.map((result, index) => (
+            {compressionResults.map((result: CompressionResult, index: number) => (
               <div key={index} className="bg-white rounded-lg p-4 border border-green-100">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center space-x-3">
