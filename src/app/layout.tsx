@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | QuickToolsHQ"
   },
   description: "Access powerful calculators, converters, text utilities, and file processing tools all in one place. Fast, free, and always available at QuickToolsHQ.",
-  keywords: "online tools, calculators, converters, text utilities, file tools, BMI calculator, unit converter, word counter",
+  keywords: "online tools, calculators, converters, text utilities, file tools, BMI calculator, unit converter, word counter, free online calculator, pdf compressor, image converter, text case converter, password generator, online productivity tools, web tools 2025, free utility tools, measurement converter, health calculator, text analysis tools",
   authors: [{ name: "QuickToolsHQ" }],
   creator: "QuickToolsHQ",
   publisher: "QuickToolsHQ",
@@ -58,11 +58,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "QuickToolsHQ",
+    "description": "Access powerful calculators, converters, text utilities, and file processing tools all in one place. Fast, free, and always available.",
+    "url": "https://quicktoolshq.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://quicktoolshq.com/tools/{search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "QuickToolsHQ",
+      "url": "https://quicktoolshq.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://quicktoolshq.com/assets/logo.svg"
+      }
+    }
+  };
+
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/assets/logo.svg" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
