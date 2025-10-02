@@ -156,9 +156,13 @@ export const metadata = {
   title: 'Free Word Counter - Count Words, Characters & Text Analysis Tool | QuickToolsHQ',
   description: 'Count words, characters, sentences, and paragraphs instantly with our free online word counter. Get reading time estimates and detailed text analysis for academic, professional, and creative writing.',
   keywords: 'word counter, character counter, text analysis, writing tool, essay counter, content writing, word count checker, text statistics, reading time calculator, paragraph counter, sentence counter, social media character limit, academic writing tool, SEO content analyzer',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools/word-counter',
+  },
   openGraph: {
     title: 'Free Word Counter - Count Words, Characters & Text Analysis',
     description: 'Instantly count words, characters, sentences, and paragraphs with reading time estimates. Perfect for writers, students, and content creators.',
+    url: 'https://quicktoolshq.com/tools/word-counter',
     type: 'website',
   }
 };

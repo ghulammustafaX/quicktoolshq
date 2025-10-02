@@ -177,9 +177,13 @@ export const metadata = {
   title: 'Free Text Case Converter - Transform Text Cases Online | QuickToolsHQ',
   description: 'Convert text between different cases instantly. Transform to uppercase, lowercase, title case, camelCase, PascalCase, snake_case, kebab-case and more. Free online text case converter tool.',
   keywords: 'text case converter, uppercase converter, lowercase converter, title case converter, camelCase converter, PascalCase converter, snake_case converter, kebab-case converter, text transformer, programming naming conventions, variable naming, code formatting, text formatting tool',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools/text-case-converter',
+  },
   openGraph: {
     title: 'Free Text Case Converter - Transform Text Cases Online',
     description: 'Convert text between multiple case formats instantly. Perfect for developers and content creators.',
+    url: 'https://quicktoolshq.com/tools/text-case-converter',
     type: 'website',
   }
 };

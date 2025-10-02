@@ -155,9 +155,13 @@ export const metadata = {
   title: 'Free Image Converter Online - Convert Images Between Formats | QuickTools HQ',
   description: 'Convert images between JPG, PNG, WebP, BMP, GIF, and TIFF formats. Free online image converter with batch processing and quality preservation.',
   keywords: 'image converter, convert jpg to png, convert png to jpg, convert webp, image format converter, convert images online, jpg converter, png converter, webp converter, bmp converter, gif converter, tiff converter, batch image converter, free image converter, online image conversion, convert images free, image format changer, picture converter, photo converter, convert pictures online',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools/image-converter',
+  },
   openGraph: {
     title: 'Free Image Converter - Convert Images Between Formats',
     description: 'Convert images between multiple formats with our free online tool. Supports JPG, PNG, WebP, BMP, and more.',
+    url: 'https://quicktoolshq.com/tools/image-converter',
     type: 'website',
   }
 };

@@ -184,9 +184,13 @@ export const metadata = {
   title: 'Free PDF Converter - Images to PDF, PDF to Images Online | QuickToolsHQ',
   description: 'Convert images and documents to PDF or extract images from PDF files. Free online PDF converter with batch processing and high-quality results.',
   keywords: 'PDF converter, images to PDF, PDF to images, convert to PDF, PDF extractor, online PDF converter, JPG to PDF, PNG to PDF, PDF to JPG, PDF to PNG, document converter, PDF tools, free PDF converter, batch PDF conversion, merge images to PDF',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools/pdf-converter',
+  },
   openGraph: {
     title: 'Free PDF Converter - Convert Images and Documents to PDF Online',
     description: 'Convert images and documents to PDF or extract images from PDF files with our free online converter.',
+    url: 'https://quicktoolshq.com/tools/pdf-converter',
     type: 'website',
   }
 };

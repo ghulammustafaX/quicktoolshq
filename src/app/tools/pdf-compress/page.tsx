@@ -268,9 +268,13 @@ export const metadata = {
   title: 'Free PDF Compressor Online - Reduce PDF File Size | QuickTools HQ',
   description: 'Compress PDF files online for free while maintaining document quality. Reduce file size up to 70% using advanced compression algorithms.',
   keywords: 'pdf compressor, compress pdf online, reduce pdf size, free pdf compression, pdf file size reducer, online pdf compressor, compress pdf free, pdf optimization, pdf size reducer, minimize pdf, shrink pdf files, pdf file compressor, compress documents online, pdf quality compression, reduce pdf file size online, free online pdf compressor, pdf compression tool, compress large pdf files, pdf file optimization, small pdf files',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools/pdf-compress',
+  },
   openGraph: {
     title: 'Free PDF Compressor - Reduce PDF File Size Online',
     description: 'Compress PDF files online for free while maintaining document quality. Professional PDF compression tool.',
+    url: 'https://quicktoolshq.com/tools/pdf-compress',
     type: 'website',
   }
 };

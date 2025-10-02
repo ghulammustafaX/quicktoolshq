@@ -5,6 +5,15 @@ export const metadata = {
   title: 'Best AI Writing Tools & Content Generators 2025: Boost Productivity by 500%',
   description: 'Discover 12 cutting-edge AI writing tools that revolutionize content creation. Complete analysis of features, pricing, and real-world performance tests.',
   keywords: 'AI writing tools, content generators, AI copywriting, automated content creation, writing assistants, GPT tools, content marketing, productivity tools',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/blog/best-ai-writing-tools-content-generators-2025',
+  },
+  openGraph: {
+    title: 'Best AI Writing Tools & Content Generators 2025: Boost Productivity by 500%',
+    description: 'Discover 12 cutting-edge AI writing tools that revolutionize content creation.',
+    url: 'https://quicktoolshq.com/blog/best-ai-writing-tools-content-generators-2025',
+    type: 'article',
+  },
 };
 
 export default function AIWritingToolsGuide() {

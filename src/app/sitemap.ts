@@ -1,183 +1,117 @@
 import { MetadataRoute } from 'next'
 
 /**
- * QuickToolsHQ - Complete Sitemap Generator
- * Generated: September 27, 2025
- * Total Pages: 25+ (Homepage + Tools + Blog Posts + Legal Pages)
+ * Last Updated: October 2, 2025
+ * Total Pages: 26 (Homepage + Tools + Blog Posts + Legal Pages)
  * 
  * This sitemap includes all pages for optimal SEO and search engine discovery:
- * - Main navigation pages (5)
+ * - Main navigation pages (4)
  * - All productivity tools (10) 
  * - All blog articles (10)
  * - Legal/policy pages (2)
+ * 
  */
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Use specific date for last major update
+  const lastUpdate = new Date('2025-10-02T00:00:00.000Z');
   const currentDate = new Date();
   
   // Base domain
   const baseUrl = 'https://quicktoolshq.com';
   
   // ============================================================================
-  // 📍 MAIN NAVIGATION PAGES (Priority: 1.0 - 0.6)
+  // MAIN NAVIGATION PAGES (Priority: 1.0 - 0.9)
   // ============================================================================
   const mainPages = [
     {
       url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
+      lastModified: lastUpdate,
+      changeFrequency: 'daily' as const,
       priority: 1.0,
-      description: '🏠 Homepage - Main landing page'
     },
     {
       url: `${baseUrl}/tools`,
-      lastModified: currentDate,
+      lastModified: lastUpdate,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
-      description: '🛠️ Tools Index - All productivity tools'
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: currentDate,
+      lastModified: lastUpdate,
       changeFrequency: 'weekly' as const,
-      priority: 0.8,
-      description: '📝 Blog Index - All articles and guides'
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: currentDate,
+      lastModified: lastUpdate,
       changeFrequency: 'monthly' as const,
-      priority: 0.6,
-      description: '👋 About Page - Company information'
+      priority: 0.7,
     },
   ];
 
   // ============================================================================
-  // ⚖️ LEGAL & POLICY PAGES (Priority: 0.4)
+  // LEGAL & POLICY PAGES (Priority: 0.5)
   // ============================================================================
   const legalPages = [
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: currentDate,
+      lastModified: lastUpdate,
       changeFrequency: 'yearly' as const,
-      priority: 0.4,
-      description: '🔒 Privacy Policy - Data protection info'
+      priority: 0.5,
     },
     {
       url: `${baseUrl}/terms-of-service`,
-      lastModified: currentDate,
+      lastModified: lastUpdate,
       changeFrequency: 'yearly' as const,
-      priority: 0.4,
-      description: '📄 Terms of Service - Usage terms'
+      priority: 0.5,
     },
   ];
 
   // ============================================================================
-  // 🛠️ PRODUCTIVITY TOOLS (Priority: 0.8) - High conversion value
+  // PRODUCTIVITY TOOLS (Priority: 0.8) - High conversion value
   // ============================================================================
   const toolPages = [
-    {
-      url: `${baseUrl}/tools/bmi-calculator`,
-      description: '⚖️ BMI Calculator - Body Mass Index tool'
-    },
-    {
-      url: `${baseUrl}/tools/word-counter`,
-      description: '📊 Word Counter - Text analysis tool'
-    },
-    {
-      url: `${baseUrl}/tools/unit-converter`,
-      description: '🔄 Unit Converter - Measurement conversions'
-    },
-    {
-      url: `${baseUrl}/tools/text-case-converter`,
-      description: '🔤 Text Case Converter - Text formatting'
-    },
-    {
-      url: `${baseUrl}/tools/password-generator`,
-      description: '🔐 Password Generator - Secure passwords'
-    },
-    {
-      url: `${baseUrl}/tools/image-compressor`,
-      description: '🖼️ Image Compressor - Optimize images'
-    },
-    {
-      url: `${baseUrl}/tools/image-converter`,
-      description: '🎨 Image Converter - Format conversion'
-    },
-    {
-      url: `${baseUrl}/tools/pdf-compress`,
-      description: '📄 PDF Compress - Reduce PDF size'
-    },
-    {
-      url: `${baseUrl}/tools/pdf-compressor`,
-      description: '📁 PDF Compressor - Advanced compression'
-    },
-    {
-      url: `${baseUrl}/tools/pdf-converter`,
-      description: '🔄 PDF Converter - Format conversion'
-    },
-  ].map(tool => ({
-    url: tool.url,
-    lastModified: currentDate,
+    `${baseUrl}/tools/bmi-calculator`,
+    `${baseUrl}/tools/word-counter`,
+    `${baseUrl}/tools/unit-converter`,
+    `${baseUrl}/tools/text-case-converter`,
+    `${baseUrl}/tools/password-generator`,
+    `${baseUrl}/tools/image-compressor`,
+    `${baseUrl}/tools/image-converter`,
+    `${baseUrl}/tools/pdf-compress`,
+    `${baseUrl}/tools/pdf-compressor`,
+    `${baseUrl}/tools/pdf-converter`,
+  ].map(url => ({
+    url,
+    lastModified: lastUpdate,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
-    description: tool.description
   }));
 
   // ============================================================================
-  // 📝 BLOG ARTICLES (Priority: 0.7) - Content marketing & SEO
+  // BLOG ARTICLES (Priority: 0.7) - Content marketing & SEO
   // ============================================================================
   const blogPosts = [
-    {
-      url: `${baseUrl}/blog/best-ai-writing-tools-content-generators-2025`,
-      description: '🤖 AI Writing Tools Guide - Best content generators'
-    },
-    {
-      url: `${baseUrl}/blog/best-free-online-image-compression-tools-2025`,
-      description: '🖼️ Image Compression Guide - Free online tools'
-    },
-    {
-      url: `${baseUrl}/blog/best-online-collaboration-tools-remote-teams-2025`,
-      description: '👥 Collaboration Tools - Remote team solutions'
-    },
-    {
-      url: `${baseUrl}/blog/essential-online-tools-professionals-2025`,
-      description: '💼 Professional Tools - Essential online resources'
-    },
-    {
-      url: `${baseUrl}/blog/how-to-merge-pdf-files-online-free-2025`,
-      description: '📋 PDF Merge Guide - Free online methods'
-    },
-    {
-      url: `${baseUrl}/blog/optimize-images-web-quality`,
-      description: '⚡ Image Optimization - Web performance tips'
-    },
-    {
-      url: `${baseUrl}/blog/pdf-tools-guide`,
-      description: '📄 PDF Tools Guide - Complete overview'
-    },
-    {
-      url: `${baseUrl}/blog/privacy-digital-age-data-safety`,
-      description: '🔒 Digital Privacy - Data safety in 2025'
-    },
-    {
-      url: `${baseUrl}/blog/text-processing-automation-tools-save-time-2025`,
-      description: '⚡ Text Automation - Time-saving tools'
-    },
-    {
-      url: `${baseUrl}/blog/ultimate-pdf-conversion-guide-2025`,
-      description: '🔄 PDF Conversion Guide - Complete tutorial'
-    },
-  ].map(post => ({
-    url: post.url,
-    lastModified: currentDate,
+    `${baseUrl}/blog/best-ai-writing-tools-content-generators-2025`,
+    `${baseUrl}/blog/best-free-online-image-compression-tools-2025`,
+    `${baseUrl}/blog/best-online-collaboration-tools-remote-teams-2025`,
+    `${baseUrl}/blog/essential-online-tools-professionals-2025`,
+    `${baseUrl}/blog/how-to-merge-pdf-files-online-free-2025`,
+    `${baseUrl}/blog/optimize-images-web-quality`,
+    `${baseUrl}/blog/pdf-tools-guide`,
+    `${baseUrl}/blog/privacy-digital-age-data-safety`,
+    `${baseUrl}/blog/text-processing-automation-tools-save-time-2025`,
+    `${baseUrl}/blog/ultimate-pdf-conversion-guide-2025`,
+  ].map(url => ({
+    url,
+    lastModified: lastUpdate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
-    description: post.description
   }));
 
   // ============================================================================
-  // 📊 SITEMAP SUMMARY & RETURN
+  // SITEMAP SUMMARY & RETURN
   // ============================================================================
   const allPages = [
     ...mainPages,
@@ -188,17 +122,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Log sitemap stats for development
   if (process.env.NODE_ENV === 'development') {
-    console.log(`📊 QuickToolsHQ Sitemap Generated:
-    🏠 Main Pages: ${mainPages.length}
-    ⚖️ Legal Pages: ${legalPages.length}
-    🛠️ Tool Pages: ${toolPages.length}
-    📝 Blog Posts: ${blogPosts.length}
-    📄 Total Pages: ${allPages.length}
-    🌐 Base URL: ${baseUrl}
-    📅 Generated: ${currentDate.toISOString()}
+    console.log(`
+QuickToolsHQ Sitemap Generated
+════════════════════════════════════
+Main Pages:    ${mainPages.length}
+Legal Pages:   ${legalPages.length}
+Tool Pages:    ${toolPages.length}
+Blog Posts:    ${blogPosts.length}
+════════════════════════════════════
+Total Pages:   ${allPages.length}
+Base URL:      ${baseUrl}
+Last Updated:  ${lastUpdate.toISOString()}
+Generated:     ${currentDate.toISOString()}
+════════════════════════════════════
     `);
   }
 
-  // Return clean sitemap without description field (not part of MetadataRoute.Sitemap)
-  return allPages.map(({ description, ...page }) => page);
+  return allPages;
 }

@@ -221,9 +221,13 @@ export const metadata = {
   title: 'Free Image Compressor - Reduce File Size Without Quality Loss | QuickToolsHQ',
   description: 'Compress PNG, JPG, and WebP images without quality loss. Free online image compressor that reduces file sizes by up to 80% while maintaining visual quality.',
   keywords: 'image compressor, compress images, reduce file size, image optimization, PNG compressor, JPG compressor, WebP compressor, online image compressor, free image compressor, image size reducer, optimize images, web image optimization, batch image compression',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools/image-compressor',
+  },
   openGraph: {
     title: 'Free Image Compressor - Reduce File Size Without Quality Loss',
     description: 'Compress PNG, JPG, and WebP images without losing quality with our free online image compressor.',
+    url: 'https://quicktoolshq.com/tools/image-compressor',
     type: 'website',
   }
 };

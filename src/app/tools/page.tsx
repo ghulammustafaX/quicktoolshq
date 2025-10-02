@@ -300,4 +300,13 @@ export const metadata = {
   title: 'Professional Online Tools - Calculators, Converters & Utilities | QuickToolsHQ',
   description: 'Access our comprehensive collection of professional-grade online tools including PDF converters, calculators, text utilities, and file processors. Fast, secure, and always free.',
   keywords: 'online tools, PDF converter, calculators, converters, text utilities, file tools, productivity tools, free online tools',
+  alternates: {
+    canonical: 'https://quicktoolshq.com/tools',
+  },
+  openGraph: {
+    title: 'Professional Online Tools - Calculators, Converters & Utilities',
+    description: 'Access our comprehensive collection of professional-grade online tools. Fast, secure, and always free.',
+    url: 'https://quicktoolshq.com/tools',
+    type: 'website',
+  },
 };

@@ -5,6 +5,9 @@ export const metadata = {
  title: 'Text Processing Automation Tools 2025 | Save 10+ Hours Weekly with Smart Text Tools',
  description: 'Discover 15 powerful text processing automation tools that save professionals 10+ hours per week. Complete guide to text manipulation, batch processing, and workflow optimization.',
  keywords: 'text processing automation tools, bulk text editing software, text manipulation tools 2025, automated text processing, batch text conversion, text workflow automation',
+ alternates: {
+   canonical: 'https://quicktoolshq.com/blog/text-processing-automation-tools-save-time-2025',
+ },
  openGraph: {
  title: 'Text Processing Automation Tools 2025 | Save 10+ Hours Weekly',
  description: 'Master text automation with 15 powerful tools. Complete guide to text manipulation, batch processing, and workflow optimization for professionals.',

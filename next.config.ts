@@ -25,6 +25,17 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['react-icons'],
   },
   poweredByHeader: false,
+  // Redirects to normalize URLs and prevent redirect chains
+  async redirects() {
+    return [
+      // Remove trailing slashes to normalize URLs
+      {
+        source: '/:path+/',
+        destination: '/:path+',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
