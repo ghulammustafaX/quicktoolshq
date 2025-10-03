@@ -447,7 +447,7 @@ export default function PDFToolsGuide() {
  PDF Converter
  </Link>
  <Link 
- href="/tools/pdf-compress"
+ href="/tools/pdf-compressor"
  className="bg-white/10 text-white border border-white/20 px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
  >
  PDF Compressor

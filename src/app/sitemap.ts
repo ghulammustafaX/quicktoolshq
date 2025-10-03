@@ -79,7 +79,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     `${baseUrl}/tools/password-generator`,
     `${baseUrl}/tools/image-compressor`,
     `${baseUrl}/tools/image-converter`,
-    `${baseUrl}/tools/pdf-compress`,
     `${baseUrl}/tools/pdf-compressor`,
     `${baseUrl}/tools/pdf-converter`,
   ].map(url => ({

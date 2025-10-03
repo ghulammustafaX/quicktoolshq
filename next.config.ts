@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
   // Redirects to normalize URLs and prevent redirect chains
   async redirects() {
     return [
+      // PDF Compress redirect to prevent duplicate content
+      {
+        source: '/tools/pdf-compress',
+        destination: '/tools/pdf-compressor',
+        permanent: true,
+      },
       // Remove trailing slashes to normalize URLs
       {
         source: '/:path+/',

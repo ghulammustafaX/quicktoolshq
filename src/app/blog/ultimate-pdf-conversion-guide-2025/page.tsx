@@ -45,7 +45,7 @@ export default function UltimatePDFConversionGuide2025() {
 
  const relatedTools = [
  { name: "PDF Converter", url: "/tools/pdf-converter" },
- { name: "PDF Compressor", url: "/tools/pdf-compress" },
+ { name: "PDF Compressor", url: "/tools/pdf-compressor" },
  { name: "Image Converter", url: "/tools/image-converter" }
  ];
 

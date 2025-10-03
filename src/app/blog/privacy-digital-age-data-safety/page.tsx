@@ -101,7 +101,7 @@ export default function PrivacyDigitalAge() {
  workflow: "Document Processing",
  insecure: "Upload sensitive documents to online converters",
  secure: "Use client-side PDF converters that process files locally",
- tools: ["/tools/pdf-converter", "/tools/pdf-compress"]
+ tools: ["/tools/pdf-converter", "/tools/pdf-compressor"]
  },
  {
  workflow: "Password Management",

@@ -93,7 +93,7 @@ export default function ToolsPage() {
     {
       name: 'PDF Compressor',
       description: 'Reduce PDF file size while maintaining optimal quality and readability',
-      href: '/tools/pdf-compress',
+      href: '/tools/pdf-compressor',
       category: 'Files',
       icon: FileIcon
     },
