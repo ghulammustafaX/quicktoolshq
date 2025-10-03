@@ -601,8 +601,8 @@ export default function PrivacyDigitalAge() {
 }
 
 export const metadata = {
- title: 'Privacy in the Digital Age: Complete Data Protection Guide 2024 | QuickToolsHQ',
- description: 'Master digital privacy with our comprehensive guide. Learn data protection strategies, secure workflows, and privacy-focused online tools for safe digital productivity.',
+ title: 'Privacy in Digital Age: Data Protection Guide 2024 | QuickToolsHQ',
+ description: 'Master digital privacy with our guide. Learn data protection strategies, secure workflows, and privacy-focused online tools for safe productivity.',
  keywords: 'digital privacy, data protection, online security, privacy tools, secure workflows, data safety, cybersecurity, privacy best practices, online privacy guide',
  alternates: {
    canonical: 'https://quicktoolshq.com/blog/privacy-digital-age-data-safety',

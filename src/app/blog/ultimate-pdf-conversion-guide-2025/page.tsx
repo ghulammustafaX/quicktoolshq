@@ -396,14 +396,14 @@ export default function UltimatePDFConversionGuide2025() {
 }
 
 export const metadata = {
- title: 'Ultimate PDF Conversion Guide 2025 - Best Practices & Tips | QuickToolsHQ',
- description: 'Master PDF conversion with our comprehensive guide. Learn image-to-PDF, document conversion, optimization techniques, and security best practices for professional results.',
+ title: 'Ultimate PDF Conversion Guide 2025 - Tips | QuickToolsHQ',
+ description: 'Master PDF conversion with our guide. Learn image-to-PDF, document conversion, optimization techniques, and security best practices for results.',
  keywords: 'PDF conversion, image to PDF, document to PDF, PDF optimization, PDF compression, PDF best practices, convert to PDF, PDF guide 2025',
  alternates: {
    canonical: 'https://quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',
  },
  openGraph: {
- title: 'Ultimate PDF Conversion Guide 2025 - Professional Tips & Best Practices',
+ title: 'Ultimate PDF Conversion Guide 2025 - Professional Tips',
  description: 'Complete guide to PDF conversion covering image-to-PDF, optimization, security, and troubleshooting. Master professional PDF workflows.',
  type: 'article',
  url: 'https://quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',

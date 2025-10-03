@@ -2,14 +2,14 @@ import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
 
 export const metadata = {
- title: 'Complete PDF Tools Guide 2025 | Convert, Compress & Process PDFs Online',
- description: 'Master PDF workflows with our comprehensive guide to converting, compressing, and processing PDFs. Expert tips for efficient document management and optimization.',
+ title: 'PDF Tools Guide 2025 | Convert, Compress & Process PDFs Online',
+ description: 'Master PDF workflows with our guide to converting, compressing, and processing PDFs. Expert tips for efficient document management and optimization.',
  keywords: 'pdf tools, pdf converter, pdf compressor, image to pdf, pdf guide, document processing, pdf optimization',
  alternates: {
    canonical: 'https://quicktoolshq.com/blog/pdf-tools-guide',
  },
  openGraph: {
- title: 'Complete PDF Tools Guide 2025 - Convert, Compress & Process PDFs',
+ title: 'PDF Tools Guide 2025 - Convert, Compress & Process PDFs',
  description: 'Learn professional PDF workflows. Convert images to PDF, compress files, and optimize documents with expert tips and best practices.',
  type: 'article',
  url: 'https://quicktoolshq.com/blog/pdf-tools-guide',
