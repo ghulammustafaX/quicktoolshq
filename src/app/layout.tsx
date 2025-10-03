@@ -63,18 +63,31 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
-    },
+    }
   },
   verification: {
     google: 'google-site-verification-code-here', // Replace with your actual Google Search Console verification code
+    // yandex: 'yandex-verification-code-here', // Add if you want Yandex verification
+    // bing: 'bing-verification-code-here', // Add if you want Bing verification
   },
   category: 'technology',
+  classification: 'business',
+  other: {
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'theme-color': '#00B5AD',
+    'msapplication-TileColor': '#00B5AD',
+    'format-detection': 'telephone=no'
+  },
 };
 
 export default function RootLayout({
@@ -89,6 +102,7 @@ export default function RootLayout({
         "@type": "WebSite",
         "@id": "https://quicktoolshq.com/#website",
         "name": "QuickToolsHQ",
+        "alternateName": "Quick Tools HQ",
         "description": "Access powerful calculators, converters, text utilities, and file processing tools all in one place. Fast, free, and always available.",
         "url": "https://quicktoolshq.com",
         "inLanguage": "en-US",
@@ -96,25 +110,67 @@ export default function RootLayout({
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://quicktoolshq.com/tools/{search_term_string}"
+            "urlTemplate": "https://quicktoolshq.com/tools?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         },
         "publisher": {
           "@id": "https://quicktoolshq.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://quicktoolshq.com/#webpage"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://quicktoolshq.com/#webpage",
+        "url": "https://quicktoolshq.com",
+        "name": "QuickToolsHQ - Free Online Tools & Calculators",
+        "isPartOf": {
+          "@id": "https://quicktoolshq.com/#website"
+        },
+        "about": {
+          "@id": "https://quicktoolshq.com/#organization"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://quicktoolshq.com/#logo"
+        },
+        "datePublished": "2024-01-01T00:00:00+00:00",
+        "dateModified": "2025-10-03T00:00:00+00:00",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://quicktoolshq.com"
+            }
+          ]
         }
       },
       {
         "@type": "Organization",
         "@id": "https://quicktoolshq.com/#organization",
         "name": "QuickToolsHQ",
+        "alternateName": "Quick Tools HQ",
         "url": "https://quicktoolshq.com",
         "logo": {
-          "@type": "ImageObject",
-          "url": "https://quicktoolshq.com/assets/logo.svg",
-          "width": 512,
-          "height": 512
+          "@id": "https://quicktoolshq.com/#logo"
         },
+        "image": {
+          "@id": "https://quicktoolshq.com/#logo"
+        },
+        "description": "Provider of free online tools and utilities for productivity, calculations, and file processing.",
+        "foundingDate": "2024-01-01",
+        "knowsAbout": [
+          "Online Tools",
+          "Calculators", 
+          "File Conversion",
+          "Text Processing",
+          "Image Optimization",
+          "PDF Tools"
+        ],
         "sameAs": [
           "https://twitter.com/QuickToolsHQ",
           "https://github.com/quicktoolshq"
@@ -123,20 +179,39 @@ export default function RootLayout({
           "@type": "ContactPoint",
           "contactType": "Customer Support",
           "email": "hello@quicktoolshq.com",
-          "url": "https://quicktoolshq.com/about"
+          "url": "https://quicktoolshq.com/about",
+          "availableLanguage": "English"
         }
       },
       {
+        "@type": "ImageObject",
+        "@id": "https://quicktoolshq.com/#logo",
+        "url": "https://quicktoolshq.com/assets/logo.svg",
+        "contentUrl": "https://quicktoolshq.com/assets/logo.svg",
+        "width": 512,
+        "height": 512,
+        "caption": "QuickToolsHQ Logo",
+        "encodingFormat": "image/svg+xml"
+      },
+      {
         "@type": "WebApplication",
+        "@id": "https://quicktoolshq.com/#webapplication",
         "name": "QuickToolsHQ Online Tools",
+        "alternateName": "Quick Tools Collection",
         "url": "https://quicktoolshq.com/tools",
-        "description": "Free online tools including BMI calculator, word counter, unit converter, PDF tools, and more",
+        "description": "Free online tools including BMI calculator, word counter, unit converter, PDF tools, image compressor, and more productivity utilities",
         "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Productivity Tools",
         "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript. Compatible with Chrome, Firefox, Safari, Edge.",
+        "softwareVersion": "1.0",
+        "releaseNotes": "Latest version with enhanced tools and improved performance",
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -146,15 +221,21 @@ export default function RootLayout({
           "worstRating": "1"
         },
         "featureList": [
-          "BMI Calculator",
-          "Word Counter",
-          "Unit Converter",
-          "Text Case Converter",
-          "Password Generator",
-          "PDF Converter",
-          "Image Compressor",
-          "Image Converter"
-        ]
+          "BMI Calculator - Calculate Body Mass Index",
+          "Word Counter - Count words, characters, and paragraphs",
+          "Unit Converter - Convert between different units",
+          "Text Case Converter - Change text case formats",
+          "Password Generator - Create secure passwords",
+          "PDF Compressor - Reduce PDF file size",
+          "PDF Converter - Convert files to PDF format",
+          "Image Compressor - Optimize image file size",
+          "Image Converter - Convert between image formats"
+        ],
+        "screenshot": "https://quicktoolshq.com/assets/quicktoolLogo.png",
+        "softwareHelp": "https://quicktoolshq.com/about",
+        "provider": {
+          "@id": "https://quicktoolshq.com/#organization"
+        }
       }
     ]
   };
