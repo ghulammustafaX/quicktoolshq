@@ -162,6 +162,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* IndexNow API Key for Search Engine Real-time Indexing */}
+        <meta name="IndexNow" content="4847ead0e24841db8a62b80bd0a762c9" />
+        
         {/* Google Analytics */}
         <script
           async
