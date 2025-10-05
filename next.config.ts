@@ -42,6 +42,24 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // Headers for canonical URL enforcement
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'index, follow',
+          },
+          {
+            key: 'Link',
+            value: '<https://quicktoolshq.com>; rel="canonical"',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
