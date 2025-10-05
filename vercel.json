@@ -1,14 +1,22 @@
 {
   "redirects": [
     {
+      "source": "https://www.quicktoolshq.com/:path*",
+      "destination": "https://quicktoolshq.com/:path*",
+      "permanent": true,
+      "statusCode": 301
+    },
+    {
       "source": "http://www.quicktoolshq.com/:path*",
       "destination": "https://quicktoolshq.com/:path*",
-      "permanent": true
+      "permanent": true,
+      "statusCode": 301
     },
     {
       "source": "http://quicktoolshq.com/:path*",
       "destination": "https://quicktoolshq.com/:path*",
-      "permanent": true
+      "permanent": true,
+      "statusCode": 301
     }
   ],
   "headers": [
