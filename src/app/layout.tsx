@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: 'QuickToolsHQ',
     images: [
       {
-        url: 'https://www.quicktoolshq.com/assets/logo.svg',
+        url: 'https://www.quicktoolshq.com/assets/quicktoolLogo.png',
         width: 1200,
         height: 630,
         alt: 'QuickToolsHQ - Free Online Tools',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'QuickToolsHQ - Your HQ for Fast Online Tools',
     description: 'Access powerful calculators, converters, text utilities, and file processing tools all in one place.',
-    images: ['https://www.quicktoolshq.com/assets/logo.svg'],
+    images: ['https://www.quicktoolshq.com/assets/quicktoolLogo.png'],
     creator: '@QuickToolsHQ',
   },
   robots: {
@@ -246,6 +246,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Performance hints */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
         {/* IndexNow API Key for Search Engine Real-time Indexing */}
         <meta name="IndexNow" content="4847ead0e24841db8a62b80bd0a762c9" />
         
