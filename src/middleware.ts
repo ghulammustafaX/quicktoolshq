@@ -5,23 +5,22 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get('host') || '';
 
-  // Force HTTPS and non-www
-  if (hostname.startsWith('www.')) {
-    // Redirect www to non-www with 301 permanent redirect
+  // Force HTTPS and www (redirect non-www to www)
+  if (!hostname.startsWith('www.') && hostname === 'quicktoolshq.com') {
+    // Redirect non-www to www with 301 permanent redirect
     const newUrl = new URL(request.url);
-    newUrl.hostname = 'quicktoolshq.com';
+    newUrl.hostname = 'www.quicktoolshq.com';
     newUrl.protocol = 'https:';
     
     return NextResponse.redirect(newUrl, {
       status: 301,
       headers: {
-        'X-Robots-Tag': 'noindex, nofollow',
         'Cache-Control': 'public, max-age=31536000, immutable',
       },
     });
   }
 
-  // Force HTTPS for non-www
+  // Force HTTPS for www
   if (url.protocol === 'http:') {
     url.protocol = 'https:';
     return NextResponse.redirect(url, {

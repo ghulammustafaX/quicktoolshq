@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date();
   
   // Base domain
-  const baseUrl = 'https://quicktoolshq.com';
+  const baseUrl = 'https://www.quicktoolshq.com';
   
   // ============================================================================
   // MAIN NAVIGATION PAGES (Priority: 1.0 - 0.9)

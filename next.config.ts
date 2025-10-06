@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['react-icons'],
   },
   poweredByHeader: false,
-  // Redirects to normalize URLs and prevent redirect chains
+  // Redirects for content consolidation only
   async redirects() {
     return [
       // PDF Compress redirect to prevent duplicate content
@@ -34,15 +34,9 @@ const nextConfig: NextConfig = {
         destination: '/tools/pdf-compressor',
         permanent: true,
       },
-      // Remove trailing slashes to normalize URLs
-      {
-        source: '/:path+/',
-        destination: '/:path+',
-        permanent: true,
-      },
     ];
   },
-  // Headers for canonical URL enforcement
+  // Headers for SEO optimization
   async headers() {
     return [
       {
@@ -51,10 +45,6 @@ const nextConfig: NextConfig = {
           {
             key: 'X-Robots-Tag',
             value: 'index, follow',
-          },
-          {
-            key: 'Link',
-            value: '<https://quicktoolshq.com>; rel="canonical"',
           },
         ],
       },

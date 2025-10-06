@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   authors: [{ name: "QuickToolsHQ" }],
   creator: "QuickToolsHQ",
   publisher: "QuickToolsHQ",
-  metadataBase: new URL('https://quicktoolshq.com'),
+  metadataBase: new URL('https://www.quicktoolshq.com'),
   alternates: {
-    canonical: 'https://quicktoolshq.com',
+    canonical: 'https://www.quicktoolshq.com',
   },
   icons: {
     icon: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://quicktoolshq.com',
+    url: 'https://www.quicktoolshq.com',
     title: 'QuickToolsHQ - Your HQ for Fast Online Tools',
     description: 'Access powerful calculators, converters, text utilities, and file processing tools all in one place. Fast, free, and always available.',
     siteName: 'QuickToolsHQ',
     images: [
       {
-        url: 'https://quicktoolshq.com/assets/logo.svg',
+        url: 'https://www.quicktoolshq.com/assets/logo.svg',
         width: 1200,
         height: 630,
         alt: 'QuickToolsHQ - Free Online Tools',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'QuickToolsHQ - Your HQ for Fast Online Tools',
     description: 'Access powerful calculators, converters, text utilities, and file processing tools all in one place.',
-    images: ['https://quicktoolshq.com/assets/logo.svg'],
+    images: ['https://www.quicktoolshq.com/assets/logo.svg'],
     creator: '@QuickToolsHQ',
   },
   robots: {

@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 1,
       }
     ],
-    sitemap: 'https://quicktoolshq.com/sitemap.xml',
-    host: 'https://quicktoolshq.com',
+    sitemap: 'https://www.quicktoolshq.com/sitemap.xml',
+    host: 'https://www.quicktoolshq.com',
   }
 }
