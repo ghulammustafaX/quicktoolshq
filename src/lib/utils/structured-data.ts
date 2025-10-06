@@ -34,10 +34,10 @@ export function generateWebPageSchema(
     "name": name,
     "description": description,
     "isPartOf": {
-      "@id": "https://quicktoolshq.com/#website"
+      "@id": "https://www.quicktoolshq.com/#website"
     },
     "about": {
-      "@id": "https://quicktoolshq.com/#organization"
+      "@id": "https://www.quicktoolshq.com/#organization"
     },
     "dateModified": dateModified || new Date().toISOString()
   };
@@ -72,7 +72,7 @@ export function generateSoftwareApplicationSchema(
     },
     "featureList": features,
     "provider": {
-      "@id": "https://quicktoolshq.com/#organization"
+      "@id": "https://www.quicktoolshq.com/#organization"
     }
   };
 }
@@ -128,10 +128,10 @@ export function generateArticleSchema(
     "datePublished": datePublished,
     "dateModified": dateModified,
     "author": {
-      "@id": "https://quicktoolshq.com/#organization"
+      "@id": "https://www.quicktoolshq.com/#organization"
     },
     "publisher": {
-      "@id": "https://quicktoolshq.com/#organization"
+      "@id": "https://www.quicktoolshq.com/#organization"
     },
     "mainEntityOfPage": {
       "@id": url
@@ -152,28 +152,28 @@ export function generateArticleSchema(
 export const TOOL_SCHEMAS = {
   "bmi-calculator": () => generateSoftwareApplicationSchema(
     "BMI Calculator",
-    "https://quicktoolshq.com/tools/bmi-calculator",
+    "https://www.quicktoolshq.com/tools/bmi-calculator",
     "Calculate your Body Mass Index (BMI) instantly with our free online calculator. Determine if your weight is healthy based on height and weight.",
     ["BMI Calculation", "Health Assessment", "Weight Analysis", "Body Mass Index"]
   ),
 
   "word-counter": () => generateSoftwareApplicationSchema(
     "Word Counter",
-    "https://quicktoolshq.com/tools/word-counter",
+    "https://www.quicktoolshq.com/tools/word-counter",
     "Count words, characters, paragraphs, and sentences in your text. Free online word counting tool for writers and students.",
     ["Word Count", "Character Count", "Text Analysis", "Writing Tools"]
   ),
 
   "unit-converter": () => generateSoftwareApplicationSchema(
     "Unit Converter",
-    "https://quicktoolshq.com/tools/unit-converter",
+    "https://www.quicktoolshq.com/tools/unit-converter",
     "Convert between different units of measurement including length, weight, temperature, and volume. Fast and accurate conversions.",
     ["Unit Conversion", "Measurement Tools", "Length Converter", "Weight Converter"]
   ),
 
   "pdf-compressor": () => generateSoftwareApplicationSchema(
     "PDF Compressor",
-    "https://quicktoolshq.com/tools/pdf-compressor",
+    "https://www.quicktoolshq.com/tools/pdf-compressor",
     "Compress PDF files online for free. Reduce PDF file size while maintaining quality. Secure browser-based compression.",
     ["PDF Compression", "File Size Reduction", "PDF Optimization", "Document Tools"]
   )

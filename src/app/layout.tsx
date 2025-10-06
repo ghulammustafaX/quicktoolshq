@@ -28,9 +28,12 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
       { url: '/assets/logo.svg', type: 'image/svg+xml' },
+      { url: '/assets/quicktoolLogo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/assets/quicktoolLogo.png', sizes: '192x192', type: 'image/png' },
     ],
     apple: [
       { url: '/assets/logo.svg', type: 'image/svg+xml' },
+      { url: '/assets/quicktoolLogo.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
       { rel: 'mask-icon', url: '/assets/logo.svg', color: '#00B5AD' },
@@ -100,40 +103,40 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://quicktoolshq.com/#website",
+        "@id": "https://www.quicktoolshq.com/#website",
         "name": "QuickToolsHQ",
         "alternateName": "Quick Tools HQ",
         "description": "Access powerful calculators, converters, text utilities, and file processing tools all in one place. Fast, free, and always available.",
-        "url": "https://quicktoolshq.com",
+        "url": "https://www.quicktoolshq.com",
         "inLanguage": "en-US",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://quicktoolshq.com/tools?q={search_term_string}"
+            "urlTemplate": "https://www.quicktoolshq.com/tools?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         },
         "publisher": {
-          "@id": "https://quicktoolshq.com/#organization"
+          "@id": "https://www.quicktoolshq.com/#organization"
         },
         "mainEntity": {
-          "@id": "https://quicktoolshq.com/#webpage"
+          "@id": "https://www.quicktoolshq.com/#webpage"
         }
       },
       {
         "@type": "WebPage",
-        "@id": "https://quicktoolshq.com/#webpage",
-        "url": "https://quicktoolshq.com",
+        "@id": "https://www.quicktoolshq.com/#webpage",
+        "url": "https://www.quicktoolshq.com",
         "name": "QuickToolsHQ - Free Online Tools & Calculators",
         "isPartOf": {
-          "@id": "https://quicktoolshq.com/#website"
+          "@id": "https://www.quicktoolshq.com/#website"
         },
         "about": {
-          "@id": "https://quicktoolshq.com/#organization"
+          "@id": "https://www.quicktoolshq.com/#organization"
         },
         "primaryImageOfPage": {
-          "@id": "https://quicktoolshq.com/#logo"
+          "@id": "https://www.quicktoolshq.com/#logo"
         },
         "datePublished": "2024-01-01T00:00:00+00:00",
         "dateModified": "2025-10-03T00:00:00+00:00",
@@ -144,22 +147,22 @@ export default function RootLayout({
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://quicktoolshq.com"
+              "item": "https://www.quicktoolshq.com"
             }
           ]
         }
       },
       {
         "@type": "Organization",
-        "@id": "https://quicktoolshq.com/#organization",
+        "@id": "https://www.quicktoolshq.com/#organization",
         "name": "QuickToolsHQ",
         "alternateName": "Quick Tools HQ",
-        "url": "https://quicktoolshq.com",
+        "url": "https://www.quicktoolshq.com",
         "logo": {
-          "@id": "https://quicktoolshq.com/#logo"
+          "@id": "https://www.quicktoolshq.com/#logo"
         },
         "image": {
-          "@id": "https://quicktoolshq.com/#logo"
+          "@id": "https://www.quicktoolshq.com/#logo"
         },
         "description": "Provider of free online tools and utilities for productivity, calculations, and file processing.",
         "foundingDate": "2024-01-01",
@@ -179,26 +182,26 @@ export default function RootLayout({
           "@type": "ContactPoint",
           "contactType": "Customer Support",
           "email": "hello@quicktoolshq.com",
-          "url": "https://quicktoolshq.com/about",
+          "url": "https://www.quicktoolshq.com/about",
           "availableLanguage": "English"
         }
       },
       {
         "@type": "ImageObject",
-        "@id": "https://quicktoolshq.com/#logo",
-        "url": "https://quicktoolshq.com/assets/logo.svg",
-        "contentUrl": "https://quicktoolshq.com/assets/logo.svg",
+        "@id": "https://www.quicktoolshq.com/#logo",
+        "url": "https://www.quicktoolshq.com/assets/quicktoolLogo.png",
+        "contentUrl": "https://www.quicktoolshq.com/assets/quicktoolLogo.png",
         "width": 512,
         "height": 512,
         "caption": "QuickToolsHQ Logo",
-        "encodingFormat": "image/svg+xml"
+        "encodingFormat": "image/png"
       },
       {
         "@type": "WebApplication",
-        "@id": "https://quicktoolshq.com/#webapplication",
+        "@id": "https://www.quicktoolshq.com/#webapplication",
         "name": "QuickToolsHQ Online Tools",
         "alternateName": "Quick Tools Collection",
-        "url": "https://quicktoolshq.com/tools",
+        "url": "https://www.quicktoolshq.com/tools",
         "description": "Free online tools including BMI calculator, word counter, unit converter, PDF tools, image compressor, and more productivity utilities",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Productivity Tools",
@@ -231,10 +234,10 @@ export default function RootLayout({
           "Image Compressor - Optimize image file size",
           "Image Converter - Convert between image formats"
         ],
-        "screenshot": "https://quicktoolshq.com/assets/quicktoolLogo.png",
-        "softwareHelp": "https://quicktoolshq.com/about",
+        "screenshot": "https://www.quicktoolshq.com/assets/quicktoolLogo.png",
+        "softwareHelp": "https://www.quicktoolshq.com/about",
         "provider": {
-          "@id": "https://quicktoolshq.com/#organization"
+          "@id": "https://www.quicktoolshq.com/#organization"
         }
       }
     ]
