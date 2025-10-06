@@ -643,13 +643,13 @@ export const metadata = {
  description: 'Master image optimization for web with expert techniques. Learn compression, format selection, and performance optimization to improve website speed and SEO.',
  keywords: 'image optimization, image compression, web performance, image formats, JPEG compression, PNG optimization, WebP images, website speed, SEO optimization',
  alternates: {
-   canonical: 'https://quicktoolshq.com/blog/optimize-images-web-quality',
+  canonical: 'https://www.quicktoolshq.com/blog/optimize-images-web-quality',
  },
  openGraph: {
  title: 'How to Optimize Images for Web Without Losing Quality',
  description: 'Complete guide to image optimization covering compression techniques, format selection, and performance best practices for faster websites.',
  type: 'article',
- url: 'https://quicktoolshq.com/blog/optimize-images-web-quality',
+ url: 'https://www.quicktoolshq.com/blog/optimize-images-web-quality',
  publishedTime: '2024-12-03T00:00:00.000Z',
  authors: ['Lisa Park'],
  tags: ['Images', 'Optimization', 'Web Performance', 'Tutorial'],

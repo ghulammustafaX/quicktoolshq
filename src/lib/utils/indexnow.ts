@@ -5,8 +5,8 @@
 
 const INDEXNOW_CONFIG = {
   key: '4847ead0e24841db8a62b80bd0a762c9',
-  host: 'quicktoolshq.com',
-  keyLocation: 'https://quicktoolshq.com/4847ead0e24841db8a62b80bd0a762c9.txt',
+  host: 'www.quicktoolshq.com',
+  keyLocation: 'https://www.quicktoolshq.com/4847ead0e24841db8a62b80bd0a762c9.txt',
   apiEndpoint: 'https://api.indexnow.org/indexnow'
 };
 
@@ -77,7 +77,7 @@ export async function submitUrls(urls: string[]): Promise<IndexNowResponse> {
  * Submit all important pages to IndexNow
  */
 export async function submitAllPages(): Promise<IndexNowResponse> {
-  const baseUrl = 'https://quicktoolshq.com';
+  const baseUrl = 'https://www.quicktoolshq.com';
   
   const urls = [
     baseUrl,
@@ -103,6 +103,6 @@ export async function submitAllPages(): Promise<IndexNowResponse> {
  * Helper function to submit URL when content is updated
  */
 export async function notifyContentUpdate(path: string): Promise<IndexNowResponse> {
-  const fullUrl = `https://quicktoolshq.com${path.startsWith('/') ? path : '/' + path}`;
+  const fullUrl = `https://www.quicktoolshq.com${path.startsWith('/') ? path : '/' + path}`;
   return await submitUrl(fullUrl);
 }

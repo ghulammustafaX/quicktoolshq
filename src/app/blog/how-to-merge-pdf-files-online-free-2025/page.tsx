@@ -6,13 +6,13 @@ export const metadata = {
  description: 'Learn 8 proven methods to merge PDF files online for free in 2025. Complete guide with step-by-step instructions, security tips, and best tools comparison for combining multiple PDFs.',
  keywords: 'how to merge PDF files online free, combine multiple PDF files, PDF merger online free 2025, join PDF documents, merge PDF without software',
  alternates: {
-   canonical: 'https://quicktoolshq.com/blog/how-to-merge-pdf-files-online-free-2025',
+  canonical: 'https://www.quicktoolshq.com/blog/how-to-merge-pdf-files-online-free-2025',
  },
  openGraph: {
  title: 'How to Merge PDF Files Online Free 2025 | Complete Guide',
  description: 'Master PDF merging with our comprehensive free guide. 8 methods, security tips, and expert tool recommendations.',
  type: 'article',
- url: 'https://quicktoolshq.com/blog/how-to-merge-pdf-files-online-free-2025',
+ url: 'https://www.quicktoolshq.com/blog/how-to-merge-pdf-files-online-free-2025',
  },
  twitter: {
  card: 'summary_large_image',

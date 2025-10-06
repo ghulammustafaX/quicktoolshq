@@ -162,12 +162,12 @@ export const metadata = {
   description: 'Calculate your BMI (Body Mass Index) instantly with our free online calculator. Check if you\'re underweight, normal weight, overweight, or obese. Medical-grade BMI calculation tool with WHO standards.',
   keywords: 'BMI calculator, body mass index calculator, BMI chart, healthy weight calculator, obesity calculator, underweight calculator, weight status, health assessment tool, WHO BMI standards, free BMI tool',
   alternates: {
-    canonical: 'https://quicktoolshq.com/tools/bmi-calculator',
+  canonical: 'https://www.quicktoolshq.com/tools/bmi-calculator',
   },
   openGraph: {
     title: 'Free BMI Calculator - Calculate Body Mass Index Online',
     description: 'Free BMI calculator to check your body mass index and weight status. Instant results with health recommendations using WHO standards.',
-    url: 'https://quicktoolshq.com/tools/bmi-calculator',
+  url: 'https://www.quicktoolshq.com/tools/bmi-calculator',
     type: 'website',
   }
 };

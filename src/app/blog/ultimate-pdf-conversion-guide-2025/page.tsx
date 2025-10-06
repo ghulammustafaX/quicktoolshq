@@ -400,13 +400,13 @@ export const metadata = {
  description: 'Master PDF conversion with our guide. Learn image-to-PDF, document conversion, optimization techniques, and security best practices for results.',
  keywords: 'PDF conversion, image to PDF, document to PDF, PDF optimization, PDF compression, PDF best practices, convert to PDF, PDF guide 2025',
  alternates: {
-   canonical: 'https://quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',
+  canonical: 'https://www.quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',
  },
  openGraph: {
  title: 'Ultimate PDF Conversion Guide 2025 - Professional Tips',
  description: 'Complete guide to PDF conversion covering image-to-PDF, optimization, security, and troubleshooting. Master professional PDF workflows.',
  type: 'article',
- url: 'https://quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',
+  url: 'https://www.quicktoolshq.com/blog/ultimate-pdf-conversion-guide-2025',
  publishedTime: '2025-01-15T00:00:00.000Z',
  authors: ['QuickTools Team'],
  tags: ['PDF', 'Conversion', 'Productivity', 'Tutorial'],

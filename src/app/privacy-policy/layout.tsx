@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: 'Our comprehensive privacy policy explains how we protect your data. All processing happens in your browser - we don\'t collect, store, or share any personal information.',
   keywords: 'privacy policy, data protection, user privacy, no tracking, secure tools, data safety',
   alternates: {
-    canonical: 'https://quicktoolshq.com/privacy-policy',
+  canonical: 'https://www.quicktoolshq.com/privacy-policy',
   },
   openGraph: {
     title: 'Privacy Policy - Your Data is Safe | QuickToolsHQ',
     description: 'Learn about our commitment to privacy. All processing happens in your browser.',
-    url: 'https://quicktoolshq.com/privacy-policy',
+  url: 'https://www.quicktoolshq.com/privacy-policy',
     type: 'website',
   },
 };

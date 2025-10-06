@@ -207,12 +207,12 @@ export const metadata = {
   description: 'Convert between different units of measurement instantly. Free online unit converter for length, weight, temperature, and volume with high precision calculations.',
   keywords: 'unit converter, metric converter, imperial converter, temperature converter, celsius to fahrenheit, feet to meters, kg to pounds, measurement tool, conversion calculator, length converter, weight converter, volume converter, scientific calculator, engineering tools, measurement conversion, unit conversion tool, online converter, metric to imperial, fahrenheit to celsius, inches to cm, pounds to kg, liters to gallons',
   alternates: {
-    canonical: 'https://quicktoolshq.com/tools/unit-converter',
+  canonical: 'https://www.quicktoolshq.com/tools/unit-converter',
   },
   openGraph: {
     title: 'Free Unit Converter - Convert Any Measurement Unit',
     description: 'Convert between different units of measurement instantly. Supports length, weight, temperature, and volume.',
-    url: 'https://quicktoolshq.com/tools/unit-converter',
+  url: 'https://www.quicktoolshq.com/tools/unit-converter',
     type: 'website',
   }
 };

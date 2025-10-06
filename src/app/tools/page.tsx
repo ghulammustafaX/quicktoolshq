@@ -301,12 +301,12 @@ export const metadata = {
   description: 'Access our collection of professional online tools including PDF converters, calculators, text utilities. Fast, secure, and always free.',
   keywords: 'online tools, PDF converter, calculators, converters, text utilities, file tools, productivity tools, free online tools',
   alternates: {
-    canonical: 'https://quicktoolshq.com/tools',
+  canonical: 'https://www.quicktoolshq.com/tools',
   },
   openGraph: {
     title: 'Online Tools - Calculators, Converters & Utilities',
     description: 'Access our comprehensive collection of professional-grade online tools. Fast, secure, and always free.',
-    url: 'https://quicktoolshq.com/tools',
+  url: 'https://www.quicktoolshq.com/tools',
     type: 'website',
   },
 };

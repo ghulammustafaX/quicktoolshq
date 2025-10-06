@@ -174,12 +174,12 @@ export const metadata = {
   description: 'Generate secure passwords with our free online tool. Create random passwords or transform custom input. Features length control and strength assessment.',
   keywords: 'password generator, secure passwords, strong passwords, random password, password security, custom password generator, password transformer, cybersecurity, password strength checker',
   alternates: {
-    canonical: 'https://quicktoolshq.com/tools/password-generator',
+  canonical: 'https://www.quicktoolshq.com/tools/password-generator',
   },
   openGraph: {
     title: 'Password Generator - Create Secure Passwords & Custom Input',
     description: 'Generate cryptographically secure passwords or transform your custom input into strong passwords. Free tool with advanced security features.',
-    url: 'https://quicktoolshq.com/tools/password-generator',
+  url: 'https://www.quicktoolshq.com/tools/password-generator',
     type: 'website',
   }
 };

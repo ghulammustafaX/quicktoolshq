@@ -6,13 +6,13 @@ export const metadata = {
  description: 'Master PDF workflows with our guide to converting, compressing, and processing PDFs. Expert tips for efficient document management and optimization.',
  keywords: 'pdf tools, pdf converter, pdf compressor, image to pdf, pdf guide, document processing, pdf optimization',
  alternates: {
-   canonical: 'https://quicktoolshq.com/blog/pdf-tools-guide',
+  canonical: 'https://www.quicktoolshq.com/blog/pdf-tools-guide',
  },
  openGraph: {
  title: 'PDF Tools Guide 2025 - Convert, Compress & Process PDFs',
  description: 'Learn professional PDF workflows. Convert images to PDF, compress files, and optimize documents with expert tips and best practices.',
  type: 'article',
- url: 'https://quicktoolshq.com/blog/pdf-tools-guide',
+ url: 'https://www.quicktoolshq.com/blog/pdf-tools-guide',
  },
  twitter: {
  card: 'summary_large_image',

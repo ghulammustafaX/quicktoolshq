@@ -6,13 +6,13 @@ export const metadata = {
  description: 'Compare 10 best free online image compression tools in 2025. Learn how to reduce image file size by 80% without losing quality. JPEG, PNG, WebP optimization guide.',
  keywords: 'free online image compression tools, reduce image file size without losing quality, best image compressor 2025, optimize images for web, JPEG PNG compression online',
  alternates: {
-   canonical: 'https://quicktoolshq.com/blog/best-free-online-image-compression-tools-2025',
+  canonical: 'https://www.quicktoolshq.com/blog/best-free-online-image-compression-tools-2025',
  },
  openGraph: {
  title: 'Best Free Image Compression Tools 2025 | Reduce Size Without Quality Loss',
  description: 'Discover the top 10 free online image compression tools. Learn professional techniques to optimize images for web and reduce file sizes by up to 80%.',
  type: 'article',
- url: 'https://quicktoolshq.com/blog/best-free-online-image-compression-tools-2025',
+ url: 'https://www.quicktoolshq.com/blog/best-free-online-image-compression-tools-2025',
  },
  twitter: {
  card: 'summary_large_image',

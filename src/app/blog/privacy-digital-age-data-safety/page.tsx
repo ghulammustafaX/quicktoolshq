@@ -605,13 +605,13 @@ export const metadata = {
  description: 'Master digital privacy with our guide. Learn data protection strategies, secure workflows, and privacy-focused online tools for safe productivity.',
  keywords: 'digital privacy, data protection, online security, privacy tools, secure workflows, data safety, cybersecurity, privacy best practices, online privacy guide',
  alternates: {
-   canonical: 'https://quicktoolshq.com/blog/privacy-digital-age-data-safety',
+  canonical: 'https://www.quicktoolshq.com/blog/privacy-digital-age-data-safety',
  },
  openGraph: {
  title: 'Privacy in the Digital Age: How to Keep Your Data Safe Online',
  description: 'Complete guide to digital privacy and data protection. Learn secure workflows and privacy-focused strategies for online productivity.',
  type: 'article',
- url: 'https://quicktoolshq.com/blog/privacy-digital-age-data-safety',
+ url: 'https://www.quicktoolshq.com/blog/privacy-digital-age-data-safety',
  publishedTime: '2024-12-05T00:00:00.000Z',
  authors: ['Michael Rodriguez'],
  tags: ['Privacy', 'Security', 'Data Protection', 'Best Practices'],
