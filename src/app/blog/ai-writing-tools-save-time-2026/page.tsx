@@ -32,6 +32,7 @@ export default function AIWritingTimeSavers2026() {
           <header className="mb-12">
             <div className="flex flex-wrap items-center gap-4 mb-6 text-sm text-gray-600">
               <span className="bg-[#00B5AD] text-white px-3 py-1 rounded-full font-medium">AI Tools</span>
+              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium border border-yellow-200">New</span>
               <span>14 min read</span>
               <span>•</span>
               <span>Published: January 12, 2026</span>
