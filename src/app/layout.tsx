@@ -244,8 +244,10 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" style={{ colorScheme: 'light' }}>
       <head>
+        {/* Force light mode - prevent browser dark theme from affecting the site */}
+        <meta name="color-scheme" content="light only" />
         {/* Performance hints */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
